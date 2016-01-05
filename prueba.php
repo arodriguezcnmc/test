@@ -30,4 +30,5 @@ echo "</pre>";
 
 $texto = '<p style="text-decoration:none" class="aaa">Textoooo</p>';
 echo $texto;
+echo $texto;
 ?>
