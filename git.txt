@@ -1,0 +1,6 @@
+- Clonar repositorio remoto poniendo la ruta (ej: https://github.com/arodriguezcnmc/test.git)
+- Añadir archivos a la zona "index": git add nombre_archivo o git add --all (para todos)
+- Realizar el commit: git commit -m "mensaje_a_enviar"
+- Realizar el push: push origin master
+- Comprobar diferencias entre dos archivos: diff archivo1 archivo2
+- Descargar todos los archivos: git pull

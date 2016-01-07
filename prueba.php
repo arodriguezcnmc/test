@@ -28,7 +28,7 @@ print_r($enlaces);
 echo "</pre>";
 */
 
-$texto = '<p style="text-decoration:none" class="aaa">Textoooo</p>';
-echo $texto;
+$texto = '<p   jquery1372850096533="1">Textoooo</p>';
+$texto = preg_replace('/[ ]+[style|class|jquery{0-9}*]+="(.*)"/i', '', $texto);
 echo $texto;
 ?>
