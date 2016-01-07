@@ -4,7 +4,6 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 include('librerias/db_sqlsrv.php');
 include('librerias/funciones.php');
-
 $db = new db_sqlsrv;
 $db2 = new db_sqlsrv;
 
@@ -15,11 +14,11 @@ $module_id = 1085;
 // Nombre entidad de Drupal
 $entidad = 'novedad';
 
-// Equivalencia de las opciones de la vieja web a la taxonomía de Drupal (tabla, id)
+// Equivalencia de las opciones de la vieja web a la taxonomía de Drupal - valor categoría sqlsrv => id taxonomía drupal
 $taxonomia = array();
 $taxonomia[76] = array('CNMC' => 2, 'Competencia' => 3, 'Energía' => 4, 'Estadísticas' => 5, 'Promoción' => 7, 'Promoción Competencia' => 7, 'PromocionCompetencia' => 7, 'telecomunicacionesysaudiovisuales' => 1, 'transportesysectorpostal' => 6, 'Unidad de Mercado' => 9);
 
-// Equivalencia de los campos de la vieja web con el tipo de datos de Drupal (nombre, tipo)
+// Equivalencia de los campos de la vieja web con el tipo de datos de Drupal - campo sqlsrv => (nombre, tipo)
 $eq_campos = array(75 => array('title', ''), 76 => array('field_categoria', 'taxonomy'), 81 => array('field_texto_corto', ''), 83 => array('field_portada', 'boolean'), 84 => array('field_fecha', 'date'), 85 => array('body', 'basic_html'), 142 => array('field_nota_de_prensa_titulo', ''), 143 => array('field_nota_de_prensa_enlace', ''), 412 => array('field_fecha_publicacion', 'datetime'));
 
 // Obtenemos todos los registros

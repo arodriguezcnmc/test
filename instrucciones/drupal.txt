@@ -1,13 +1,13 @@
 1. Crear tipo de datos
-2. Crear endpoint (Activando todos los "... contenido")
+2. Crear endpoint (Activando todos los "CREATE, DELETE, RETRIEVE, UPDATE contenido")
 3. Probar api con chrome
 
 - Llamada GET:
-	ur: localhost:3880/drupal/novedad/node/1?format=hal+json
+	ur: localhost:3880/drupal/[entidad]/node/[id contenido]?format=hal+json
 
 - Llamada POST:
-	url: localhost:3880/drupal/novedad/node?format=hal+json
-	json: {"_links":{"type":{"href":"http://localhost:3880/drupal/rest/type/node/novedad"}},
+	url: localhost:3880/drupal/[entidad]/node?format=hal+json
+	json ejemplo: {"_links":{"type":{"href":"http://localhost:3880/drupal/rest/type/node/novedad"}},
  "title":[{"value":"prueba api"}],
  "body":[{"value":"pruebaaaa"}],
  "field_fecha":[{"value":"2015-01-01"}],

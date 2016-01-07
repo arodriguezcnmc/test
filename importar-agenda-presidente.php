@@ -4,7 +4,6 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 include('librerias/db_sqlsrv.php');
 include('librerias/funciones.php');
-
 $db = new db_sqlsrv;
 $db2 = new db_sqlsrv;
 
@@ -17,11 +16,7 @@ $CageforyID = 17;
 // Nombre entidad de Drupal
 $entidad = 'agenda_presidente';
 
-// Equivalencia de las opciones de la vieja web a la taxonomía de Drupal (tabla, id)
-$taxonomia = array();
-$taxonomia['categoria'] = array(15 => 2, 11 => 3, 12 => 4, 16 => 7, 13 => 1, 14 => 6);
-
-// Equivalencia de los campos de la vieja web con el tipo de datos de Drupal (nombre, tipo)
+// Equivalencia de los campos de la vieja web con el tipo de datos de Drupal - campo sqlsrv => (nombre, tipo)
 $eq_campos = array('Title' => array('title', ''), 'SubTitle' => array('field_subtituloa', ''), 'Article' => array('body', 'basic_html'), 'PublishDate' => array('field_fecha_de_publicaciona', 'datetime'));
 
 // Obtenemos todos los registros

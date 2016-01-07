@@ -4,7 +4,6 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 include('librerias/db_sqlsrv.php');
 include('librerias/funciones.php');
-
 $db = new db_sqlsrv;
 $db2 = new db_sqlsrv;
 
@@ -17,11 +16,11 @@ $CageforyID = 10;
 // Nombre entidad de Drupal
 $entidad = 'nota_de_prensa';
 
-// Equivalencia de las opciones de la vieja web a la taxonomía de Drupal (tabla, id)
+// Equivalencia de las opciones de la vieja web a la taxonomía de Drupal - valor categoría sqlsrv => id taxonomía drupal
 $taxonomia = array();
 $taxonomia['categoria'] = array(15 => 2, 11 => 3, 12 => 4, 16 => 7, 13 => 1, 14 => 6);
 
-// Equivalencia de los campos de la vieja web con el tipo de datos de Drupal (nombre, tipo)
+// Equivalencia de los campos de la vieja web con el tipo de datos de Drupal - campo sqlsrv => (nombre, tipo)
 $eq_campos = array('Title' => array('title', ''), 'SubTitle' => array('field_subtitulo', ''), 'Article' => array('body', 'basic_html'), 'Summary' => array('field_resumen', 'summary'), 'PublishDate' => array('field_fecha_de_publicacion', 'datetime'), 'ExpireDate' => array('field_fecha_de_expiracion', 'datetime'),  'categoria' => array('field_categoriap', 'taxonomy'));
 
 // Obtenemos todos los registros
